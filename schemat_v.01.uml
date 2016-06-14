@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>779b71cb-08d1-4aab-a4d4-7e63c58b819b</OriginalElement>
+  <nodes>
+    <node x="272.75" y="415.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product</node>
+    <node x="406.5" y="617.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.order_product</node>
+    <node x="0.0" y="360.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order</node>
+    <node x="282.75" y="180.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.manufacturer</node>
+    <node x="215.5" y="617.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product_order</node>
+    <node x="60.0" y="0.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.role</node>
+    <node x="15.5" y="617.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order_product</node>
+    <node x="609.5" y="0.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.sth</node>
+    <node x="10.0" y="125.0">779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.user</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product_order" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order">
+      <point x="-42.75" y="-37.0" />
+      <point x="258.25" y="587.0" />
+      <point x="181.5" y="587.0" />
+      <point x="60.5" y="103.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.user">
+      <point x="0.0" y="-103.5" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product_order" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product">
+      <point x="42.75" y="-37.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order_product" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product">
+      <point x="45.0" y="-37.0" />
+      <point x="150.5" y="597.0" />
+      <point x="296.4166666666667" y="597.0" />
+      <point x="-47.333333333333314" y="48.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order_product" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order">
+      <point x="-45.0" y="-37.0" />
+      <point x="-60.5" y="103.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.user" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.role">
+      <point x="0.0" y="-92.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.order_product" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product">
+      <point x="0.0" y="-37.0" />
+      <point x="485.5" y="597.0" />
+      <point x="391.08333333333337" y="597.0" />
+      <point x="47.33333333333337" y="48.5" />
+    </edge>
+    <edge source="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product" target="779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.manufacturer">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7159574468085107" x="795.0059435364041" y="271.23179791976224" />
+  <SelectedNodes>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.order_product</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.manufacturer</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.product_order</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.role</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.my_order_product</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.sth</node>
+    <node>779b71cb-08d1-4aab-a4d4-7e63c58b819b.TABLE:ai.user</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

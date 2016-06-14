@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+      xmlns="http://www.w3.org/1999/xhtml"
+      ng-app="AIpro">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <link href="a" th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.css}" rel="stylesheet"/>
+    <script src="http://cdn.jsdelivr.net/webjars/org.webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+    <script src="http://cdn.jsdelivr.net/webjars/angularjs/1.3.15/angular.min.js"
+            th:src="@{/webjars/angularjs/1.4.0/angular.min.js}"></script>
+    <script src="http://cdn.jsdelivr.net/webjars/org.webjars/bootstrap/3.3.6/js/bootstrap.min.js"
+            th:src="@{/webjars/bootstrap/3.3.6/js/bootstrap.min.js}"></script>
+    <script src="a" th:src="@{/js/App.js}"/>
+    <!--<script src="a" th:src="@{/js/index.js}"/>-->
+</head>
+
+<body>
+<div id="content" class="container">
+    <div th:replace="fragments/header :: header">
+        <!-- ============================================================================ -->
+        <!-- This content is only used for static prototyping purposes (natural templates)-->
+        <!-- and is therefore entirely optional, as this markup fragment will be included -->
+        <!-- from "fragments/header.html" at runtime.                                     -->
+        <!-- ============================================================================ -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Static header</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="left">
+        <h2>Menu</h2>
+
+            <div class="btn-group-vertical" role="group">
+                <a href="" class="btn btn-default" role="button" th:href="@{/search}">Wyszukaj</a>
+                <!-- Single button -->
+                <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Kategorie <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Laptopy</a></li>
+                    <li><a href="#">Monitory</a></li>
+                    <li><a href="#">Procesory</a></li>
+                    <li><a href="#">Karty Graficzne</a></li>
+                </ul>
+                </div>
+                <!-- Single button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Producenci <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li th:each="manufacturer : ${manufacturers}"><a href="#" th:href="@{/manufacturer(id=${manufacturer.getId()})}" th:text="${manufacturer    .name}">Lenovo</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-default"><a href="www.google.pl">O nas</a></button>
+
+                <button type="button" class="btn btn-default active"><a href="/contact">Kontakt</a></button>
+            </div>
+
+        <div id="bottom"></div>
+    </div>
+
+    <div id="srodek">
+        <h1 align="center">Skontaktuj się z nami</h1>
+
+
+
+        <fieldset id="contact_form">
+
+            <div id="result"  class="form-group">
+                <label for="name"><span>Imię</span>
+                    <input type="text" name="name" id="name"  class="form-control" placeholder="Podaj swoje imię" />
+                </label>
+
+                <label for="email"><span>Email</span>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Twój adres email" />
+                </label>
+
+                <label for="phone"><span>Telefon</span>
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Numer telefonu" />
+                </label>
+
+                <label for="message"><span>Wiadomość</span>
+                    <textarea name="message" id="message"  class="form-control" placeholder="Wiadomość do przesłania"></textarea>
+                </label>
+
+                <label><span>&nbsp;</span>
+                    <button class="btn btn-success" id="submit_btn">Wyślij</button>
+                </label>
+            </div>
+        </fieldset>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#submit_btn").click(function() {
+                    //Pobieramy dane
+                    var user_name = $('input[name=name]').val();
+                    var user_email = $('input[name=email]').val();
+                    var user_phone = $('input[name=phone]').val();
+                    var user_message = $('textarea[name=message]').val();
+
+                    //Prosta walidacja (kolorujemy na czerwono pole jeśli jest puste
+                    var proceed = true;
+                    if(user_name==""){
+                        $('input[name=name]').css('border-color','red');
+                        proceed = false;
+                    }
+                    if(user_email==""){
+                        $('input[name=email]').css('border-color','red');
+                        proceed = false;
+                    }
+                    if(user_phone=="") {
+                        $('input[name=phone]').css('border-color','red');
+                        proceed = false;
+                    }
+                    if(user_message=="") {
+                        $('textarea[name=message]').css('border-color','red');
+                        proceed = false;
+                    }
+
+                    if(proceed)
+                    {
+                        //Dane do wysłania
+                        post_data = {'userName':user_name, 'userEmail':user_email, 'userPhone':user_phone, 'userMessage':user_message};
+
+                        //Przesłanie danych poprzez AJAX
+                        $.post('contact_me.php', post_data, function(response){
+//wczytanie danych zwrotnych JSON
+                            if(response.type == 'error')
+                            {
+                                output = '<div class="error">'+response.text+'</div>';
+                            }else{
+                                output = '<div class="success">'+response.text+'</div>';
+
+                                //resetujemy wszystkie wartości
+                                $('#contact_form input').val('');
+                                $('#contact_form textarea').val('');
+                            }
+
+                            $("#result").hide().html(output).slideDown();
+                        }, 'json');
+
+                    }
+                });
+//
+//                //resetujemy kolorowanie po zaczęciu pisania
+//                $("#contact_form input, #contact_form textarea").keyup(function() {
+//                    $("#contact_form input, #contact_form textarea").css('border-color','');
+//                    $("#result").slideUp();
+//                });
+
+            });
+        </script>
+    </div>
+    </div>
+
+</body>
+</html>
