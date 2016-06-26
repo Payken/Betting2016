@@ -1,9 +1,18 @@
 package com.ai.controllers;
 
 
+import com.ai.domain.User;
+import com.ai.model.BetModel;
+import com.ai.services.UserService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.security.RolesAllowed;
 
@@ -13,7 +22,8 @@ import javax.annotation.security.RolesAllowed;
 @Controller
 @RequestMapping("/") // url (w domysle http://localhost:8080)
 public class UserController {
-
+    @Autowired
+    UserService userService;
 
 
 
