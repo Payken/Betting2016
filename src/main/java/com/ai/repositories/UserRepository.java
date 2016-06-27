@@ -18,8 +18,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
     User findByLogin(String username);
+    User findByMail(String mail);
 List<User> findByRoleIdNotLike(Integer id);
 List<User> findByRoleId(Integer id);
+User findByMailAndPassword(String mail, String password);
 
 //    public User getUserInfo(String username){
 //        String sql = "SELECT u.name name, u.password password, FROM "+

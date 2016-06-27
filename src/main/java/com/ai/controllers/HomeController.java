@@ -1,9 +1,11 @@
 package com.ai.controllers;
 
 
+import com.ai.domain.Login;
 import com.ai.domain.User;
 import com.ai.domain.Wallet;
 
+import com.ai.repositories.UserRepository;
 import com.ai.services.UserService;
 import com.ai.services.WalletService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -23,6 +25,8 @@ import java.util.List;
 public class HomeController {
 
 @Autowired
+    UserRepository userRepository;
+@Autowired
     UserService userService;
 
     @RequestMapping()  //  rozszerzenie urla z klasy, brak oznacza ze to ten sam url
@@ -39,7 +43,17 @@ public class HomeController {
 
         userService.create(user);
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.writeValueAsString(user);
+        return objectMapper.writeValueAsString(userRepository.findByMail(user.getMail()));
+
+
+    }
+    @RequestMapping(value="/loginAndroid", method = RequestMethod.POST, produces = "application/JSON")
+    @ResponseBody
+    public String searchProduct(@RequestBody Login login) throws JsonProcessingException {
+
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(userService.isCorrect(login));
 
 
     }

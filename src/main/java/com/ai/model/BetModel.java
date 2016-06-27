@@ -1,9 +1,5 @@
 package com.ai.model;
 
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.util.Base64Utils;
-
-import java.io.File;
 import java.sql.Time;
 import java.util.Date;
 

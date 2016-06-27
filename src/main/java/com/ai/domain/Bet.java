@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 /**
@@ -34,6 +35,7 @@ public class Bet {
     @JoinColumn(name = "wallet")
     @JsonIgnore
     private Wallet wallet;
+
 
     public String getS() {
         return S;

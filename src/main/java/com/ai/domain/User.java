@@ -21,7 +21,7 @@ public class User{
     private Boolean active;
     private String mail;
     private String login;
-
+    private double credits;
 
    @ManyToOne
    @JoinColumn(name = "role_id")
@@ -31,6 +31,14 @@ public class User{
 
 ///////////////////////////////////////////////////////////////////////
 
+
+    public double getCredits() {
+        return credits;
+    }
+
+    public void setCredits(double credits) {
+        this.credits = credits;
+    }
 
     public Boolean getActive() {
         return active;
