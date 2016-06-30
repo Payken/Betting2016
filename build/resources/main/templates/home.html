@@ -48,9 +48,9 @@
         <input type="text" class="form-control" ng-model="home"/>
         <label>Away team</label>
         <input type="text" class="form-control" ng-model="away"/>
-        <label>Data</label>
+        <label>Date</label>
 
-        <input type="text" value="2012-05-15 21:05" id="datetimepicker" ng-model="dateString" data-date-format="yyyy-mm-dd hh:ii"/>
+        <input type="text" value="2012-05-15 21:05" class="form-control" id="datetimepicker" ng-model="dateString" data-date-format="yyyy-mm-dd hh:ii"/>
 
         <script type="text/javascript">
             $( document ).ready(function() {
@@ -63,19 +63,23 @@
 
 
         </script>
-        <label>Stawka</label>
-        <input type="text" class="form-control" ng-model="stack"/>
-        <label>Kurs</label>
-        <input type="text" class="form-control" ng-model="odd"/>
+        <!--<label>Stawka</label>-->
+        <!--<input type="text" class="form-control" ng-model="stack"/>-->
+        <label>Odd home</label>
+        <input type="text" class="form-control" ng-model="odd1"/>
+        <label>Odd draw</label>
+        <input type="text" class="form-control" ng-model="oddX"/>
+        <label>Odd away</label>
+        <input type="text" class="form-control" ng-model="odd2"/>
         <!--<input type="file" file-model="myFile"/>-->
-        <label>Portfel</label>
-        <select  class="form-control" ng-model="wallet">
+        <label>Sport</label>
+        <select  class="form-control" ng-model="wallet" >
 
             <option th:each="wallet : ${wallets} " th:value="${wallet.id}" th:text="${wallet.name}">
             </option>
 
         </select>
-        <button class="btn btn-default" type="submit">Bet!</button>
+        <button class="btn btn-default" type="submit">Add Game</button>
 
 
     </form>

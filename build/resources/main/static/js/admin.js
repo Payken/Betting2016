@@ -13,7 +13,9 @@ angular.module("AIpro").controller("adminCtrl", function($scope, $http){
            dateString : target,
            timeString : $scope.timeString,
            stack : $scope.stack,
-           odd : $scope.odd,
+           odd1 : $scope.odd1,
+           oddX : $scope.oddX,
+           odd2 : $scope.odd2,
             wallet: $scope.wallet
 
     }

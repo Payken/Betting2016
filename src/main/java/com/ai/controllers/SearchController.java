@@ -3,6 +3,7 @@ package com.ai.controllers;
 
 import com.ai.domain.Wallet;
 import com.ai.model.SearchModel;
+import com.ai.repositories.BetRepository;
 import com.ai.repositories.UserRepository;
 
 
@@ -32,6 +33,8 @@ import java.util.List;
 public class SearchController {
 
 
+@Autowired
+    BetRepository betRepository;
 @Autowired
     UserRepository userRepository;
     @Autowired
@@ -70,6 +73,14 @@ objectMapper.configure(SerializationFeature.WRITE_DATE_KEYS_AS_TIMESTAMPS,false)
             return objectMapper.writeValueAsString(betService.getBets(searchModel));
 
 
+    }
+
+
+    @RequestMapping(value="/activeBet", method=RequestMethod.GET)
+    @ResponseBody
+    public String getActive() throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(betRepository.findByActiveTrue());
     }
 
 

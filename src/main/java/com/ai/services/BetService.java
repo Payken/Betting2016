@@ -47,8 +47,10 @@ public class BetService {
         bet.setActive(true);
         bet.setHome(betModel.getHome());
         bet.setAway(betModel.getAway());
-        bet.setBid(betModel.getStack());
-        bet.setOdd(betModel.getOdd());
+       // bet.setBid(betModel.getStack());
+        bet.setOdd1(betModel.getOdd1());
+        bet.setOddX(betModel.getOddX());
+        bet.setOdd2(betModel.getOdd2());
         bet.setWallet(walletRepository.getOne(betModel.getWallet()));
         bet.setTimestamp(Timestamp.valueOf(betModel.getDateString()));
         betRepository.save(bet);

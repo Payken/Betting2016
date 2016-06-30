@@ -49,30 +49,44 @@ margin: 109px auto 0px 40%; "/>
     </div>
 
 
-    <form ng-submit="submitForm()" class="form-group" method="post">
+    <form ng-submit="bet()" class="form-group" method="post">
         <input id="id" type="text" class="form-control"  th:placeholder="${id}" th:value="${id}" th:readonly="readonly"/>
+        <input id="user"  sec:authentication="name" th:readonly="readonly" style="visibility: hidden"></input>
 
         <label>Home team</label>
         <input type="text" class="form-control"  th:placeholder="${product.home}" th:readonly="readonly"/>
 
-        <label>Home team Goals</label>
-        <input type="text" class="form-control" ng-model="homegoals" th:placeholder="${product.home}+  goals" th:required="required" />
+        <!--<label>Home team Goals</label>-->
+        <!--<input type="text" class="form-control" ng-model="homegoals" th:placeholder="${product.home}+  goals" th:required="required" />-->
         <label>Away team</label>
         <input type="text" class="form-control"  th:placeholder="${product.away}" th:readonly="readonly"/>
-        <label>Away team Goals</label>
-        <input type="text" class="form-control" ng-model="awaygoals" th:placeholder="${product.away}+ goals" th:required="required"/>
+        <!--<label>Away team Goals</label>-->
+        <!--<input type="text" class="form-control" ng-model="awaygoals" th:placeholder="${product.away}+ goals" th:required="required"/>-->
         <label>Czas</label>
         <input type="text" class="form-control" th:placeholder="${product.timestamp}" th:readonly="readonly"/>
         <label>Stawka</label>
         <input type="text" class="form-control"  th:placeholder="${product.bid}" th:readonly="readonly"/>
         <label>Kurs</label>
-        <input type="text" class="form-control"  th:placeholder="${product.odd}" th:readonly="readonly"/>
+        <input type="text" class="form-control"  th:placeholder="${product.odd1}" th:readonly="readonly"/>
+        <label>Kurs</label>
+        <input type="text" class="form-control"  th:placeholder="${product.oddX}" th:readonly="readonly"/>
+        <label>Kurs</label>
+        <input type="text" class="form-control"  th:placeholder="${product.odd2}" th:readonly="readonly"/>
         <!--<input type="file" file-model="myFile"/>-->
-        <label>Portfel</label>
-        <input type="text" class="form-control" ng-model="odd" th:placeholder="${product.wallet.name}" th:readonly="readonly"/>
-    `
-        <button class="btn btn-success" name="action" type="submit"  data-ng-click="won()" th:value="won">===Won!==</button>
-        <button class="btn btn-danger" name="action"  type="submit" data-ng-click="lost()" th:value="lost">Lost...</button>
+        <!--<label>Portfel</label>-->
+        <!--<input type="text" class="form-control" ng-model="odd" th:placeholder="${product.wallet.name}" th:readonly="readonly"/>-->
+    <!--`-->
+        <label>Stawka</label>
+        <input type="text" class="form-control" ng-model="stack" th:placeholder="2.0" th:required="required"/>
+        <select  class="form-control" ng-model="type">
+
+            <option value="1" th:text="${product.home}"></option>
+            <option value="0" th:text="Remis"></option>
+            <option value="2" th:text="${product.away}"></option>
+
+        </select>
+
+        <button class="btn btn-success" name="action" type="submit"  th:value="bet">===Won!==</button>
 
 
     </form>

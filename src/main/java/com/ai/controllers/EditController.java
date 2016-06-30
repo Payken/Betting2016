@@ -31,7 +31,7 @@ public class EditController {
     @RequestMapping(value="*/doIT", method = RequestMethod.POST, produces = "application/JSON")
     @ResponseBody
     public String edit(@RequestBody EditModel editModel) throws JsonProcessingException {
-
+// TODO: 2016-06-28 Obsługa zakładu 
         Bet bet= new Bet();
 bet=betService.getOne(editModel.getId());
         bet.setHomeGoals(editModel.getHomegoals());

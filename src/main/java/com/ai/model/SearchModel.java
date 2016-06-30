@@ -12,7 +12,7 @@ public class SearchModel {
     private boolean active;
 
 
-    SearchModel(){
+    public SearchModel(){
 
 
     }

@@ -5,18 +5,20 @@
 angular.module("AIpro").controller("adminCtrl", function($scope, $http){
 
 
-    $scope.won = function () {
+    $scope.bet = function () {
         var target = document.getElementById('id').value;
+        var user = document.getElementById('user').value;
 
-        $scope.object = {
+        $scope.object1 = {
 
             id: target,
-           homegoals : $scope.homegoals,
-           awaygoals : $scope.awaygoals,
-            won: "TRUE",
+           type : $scope.type,
+            user: user,
+            stack: $scope.stack
+
     }
 
-        $http.post("edit/doIT", $scope.object)
+        $http.post("edit/doIT", $scope.object1)
             .then(function (response) {
                 console.log(response.data);
                 alert(response.data);
@@ -25,22 +27,6 @@ angular.module("AIpro").controller("adminCtrl", function($scope, $http){
     }
 //////////////////////////////////////////////////////////////////////////////////
 
-    $scope.lost = function () {
-        var target = document.getElementById('id').value;
-        $scope.object = {
-            id: target,
-            homegoals : $scope.homegoals,
-            awaygoals : $scope.awaygoals,
-            won: "FALSE",
-        }
 
-
-        $http.post("edit/doIT", $scope.object)
-            .then(function (response) {
-                console.log(response.data);
-                alert(response.data);
-            });
-
-    }
 
 });

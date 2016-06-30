@@ -28,7 +28,9 @@ public class Bet {
     private boolean won;
     private boolean active;
     private float bid;
-    private float odd;
+    private float odd1;
+    private float oddX;
+    private float odd2;
     private Timestamp timestamp;
     private String S;
     @ManyToOne
@@ -109,12 +111,28 @@ public class Bet {
         this.bid = bid;
     }
 
-    public float getOdd() {
-        return odd;
+    public float getOdd1() {
+        return odd1;
     }
 
-    public void setOdd(float odd) {
-        this.odd = odd;
+    public void setOdd1(float odd1) {
+        this.odd1 = odd1;
+    }
+
+    public float getOddX() {
+        return oddX;
+    }
+
+    public void setOddX(float oddX) {
+        this.oddX = oddX;
+    }
+
+    public float getOdd2() {
+        return odd2;
+    }
+
+    public void setOdd2(float odd2) {
+        this.odd2 = odd2;
     }
 
     public Timestamp getTimestamp() {

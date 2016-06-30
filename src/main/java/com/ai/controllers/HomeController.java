@@ -57,6 +57,11 @@ public class HomeController {
 
 
     }
-
+    @RequestMapping(value="/getUserInfo", method=RequestMethod.GET)
+    @ResponseBody
+    public String getInfo(@RequestParam("mail")String mail) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(userRepository.findByMail(mail));
+    }
 
 }

@@ -7,15 +7,10 @@ angular.module("AIpro").controller("searchCtrl", function($scope, $http){
 
 
     $scope.searchBet = function () {
-        $scope.object = {
-
-            walletid: $scope.walletid,
-            active: $scope.active,
-
-        }
 
 
-        $http.post("search/searchBet", $scope.object)
+
+        $http.get("search/activeBet")
             .then(function (response) {
                 console.log(response.data);
             $scope.response=response.data;
