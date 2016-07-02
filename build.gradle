@@ -47,6 +47,7 @@ dependencies {
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
     compile 'org.webjars:modernizr:2.8.3'
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.4.1208.jre7'
 
 }
 
