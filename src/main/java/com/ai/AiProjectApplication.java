@@ -1,8 +1,10 @@
 package com.ai;
 
+import com.ai.services.UserService;
 import javafx.application.Application;
 import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
