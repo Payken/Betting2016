@@ -1,21 +1,17 @@
 package com.ai.controllers;
 
 
-import com.ai.domain.Login;
+import com.ai.domain.LoginPOJO;
 import com.ai.domain.User;
-import com.ai.domain.Wallet;
 
 import com.ai.repositories.UserRepository;
 import com.ai.services.UserService;
-import com.ai.services.WalletService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * Created by fdarmoch on 2015-12-28.
@@ -49,11 +45,11 @@ public class HomeController {
     }
     @RequestMapping(value="/loginAndroid", method = RequestMethod.POST, produces = "application/JSON")
     @ResponseBody
-    public String searchProduct(@RequestBody Login login) throws JsonProcessingException {
+    public String searchProduct(@RequestBody LoginPOJO loginPOJO) throws JsonProcessingException {
 
 
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.writeValueAsString(userService.isCorrect(login));
+        return objectMapper.writeValueAsString(userService.isCorrect(loginPOJO));
 
 
     }

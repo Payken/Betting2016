@@ -2,7 +2,7 @@ package com.ai.services;
 
 
 
-import com.ai.domain.Login;
+import com.ai.domain.LoginPOJO;
 import com.ai.domain.User;
 import com.ai.repositories.RoleRepository;
 import com.ai.repositories.UserRepository;
@@ -49,10 +49,10 @@ public class UserService {
         user1.setMail(user.getMail());
         userRepository.save(user1);
         }
-    public boolean isCorrect(Login login) {
+    public boolean isCorrect(LoginPOJO loginPOJO) {
 
 
-        if(userRepository.findByMailAndPassword(login.getMail(),login.getPassword())!=null)
+        if(userRepository.findByMailAndPassword(loginPOJO.getMail(), loginPOJO.getPassword())!=null)
         return true;
                 else
         return false;}
