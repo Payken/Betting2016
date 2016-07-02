@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6af3568-abf4-4d8f-8c57-38f3106f08aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="Betting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -275,7 +274,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.25547445">
-              <caret line="9" column="118" selection-start-line="9" selection-start-column="118" selection-end-line="9" selection-end-column="118" />
+              <caret line="9" column="173" selection-start-line="9" selection-start-column="173" selection-end-line="9" selection-end-column="173" />
               <folding />
             </state>
           </provider>
@@ -1805,7 +1804,7 @@
       <workItem from="1467062376536" duration="10464000" />
       <workItem from="1467286978638" duration="2897000" />
       <workItem from="1467460221117" duration="1745000" />
-      <workItem from="1467466565643" duration="8468000" />
+      <workItem from="1467466565643" duration="8558000" />
     </task>
     <task id="LOCAL-00001" summary="Betting app 06.2016">
       <created>1465904680429</created>
@@ -2041,11 +2040,17 @@
       <option name="project" value="LOCAL" />
       <updated>1467475006089</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Deploy">
+      <created>1467475084660</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1467475084660</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48613000" />
+    <option name="totallyTimeSpent" value="48703000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2608,7 +2613,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25547445">
-          <caret line="9" column="118" selection-start-line="9" selection-start-column="118" selection-end-line="9" selection-end-column="118" />
+          <caret line="9" column="173" selection-start-line="9" selection-start-column="173" selection-end-line="9" selection-end-column="173" />
           <folding />
         </state>
       </provider>
