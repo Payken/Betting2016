@@ -38,7 +38,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity4:2.1.2.RELEASE')
     compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity3:2.1.2.RELEASE')
-
+    compile("postgresql:postgresql:9.4.1208-atlassian-hosted")
     compile("org.thymeleaf:thymeleaf-spring4:2.1.2.RELEASE")
 
     runtime("postgresql:postgresql:9.4.1208-atlassian-hosted")
