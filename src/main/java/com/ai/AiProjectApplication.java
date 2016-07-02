@@ -1,8 +1,6 @@
 package com.ai;
 
 import com.ai.services.UserService;
-
-import com.sun.glass.ui.Application;
 import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +32,7 @@ public class AiProjectApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder)
     {
-        return applicationBuilder.sources(Application.class);
+        return applicationBuilder.sources(AiProjectApplication.class);
     }
 
     static Logger log = Logger.getLogger(AiProjectApplication.class.getName());
