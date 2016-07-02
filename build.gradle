@@ -41,7 +41,7 @@ dependencies {
     compile("postgresql:postgresql:9.4.1208-atlassian-hosted")
     compile("org.thymeleaf:thymeleaf-spring4:2.1.2.RELEASE")
 
-    runtime("postgresql:postgresql:9.4.1208-atlassian-hosted")
+    runtime("postgresql:postgresql:9.1-901.jdbc4")
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
     compile 'org.webjars:bootstrap:3.3.6'
