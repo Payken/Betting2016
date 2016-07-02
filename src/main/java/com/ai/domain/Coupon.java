@@ -8,6 +8,7 @@ import javax.persistence.ManyToOne;
 /**
  * Created by fdarmoch on 2016-06-28.
  */
+
 public class Coupon {
 
 

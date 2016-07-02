@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * Created by fdarmoch on 2016-01-03.
  */
+@Table(name = "`USERR`")
 public class User{
 
 

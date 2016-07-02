@@ -13,6 +13,7 @@ import java.util.List;
 /**
  * Created by fdarmoch on 2015-12-30.
  */
+@Table(name = "`BET`")
 public class Bet {
 
 
