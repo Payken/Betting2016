@@ -4,9 +4,7 @@
     <option name="SCOPE_TYPE" value="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6af3568-abf4-4d8f-8c57-38f3106f08aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c6af3568-abf4-4d8f-8c57-38f3106f08aa" name="Default" comment="" />
     <ignored path="Betting.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -1656,7 +1654,7 @@
       <workItem from="1467062376536" duration="10464000" />
       <workItem from="1467286978638" duration="2897000" />
       <workItem from="1467460221117" duration="1745000" />
-      <workItem from="1467466565643" duration="3741000" />
+      <workItem from="1467466565643" duration="3918000" />
     </task>
     <task id="LOCAL-00001" summary="Betting app 06.2016">
       <created>1465904680429</created>
@@ -1712,11 +1710,23 @@
       <option name="project" value="LOCAL" />
       <updated>1467470242538</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Deploy">
+      <created>1467470397639</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1467470397639</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Deploy">
+      <created>1467470457526</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1467470457526</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43886000" />
+    <option name="totallyTimeSpent" value="44063000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
