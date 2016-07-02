@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6af3568-abf4-4d8f-8c57-38f3106f08aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
     </list>
     <ignored path="Betting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -273,8 +274,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37696335">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.1361257">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -316,7 +317,17 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -360,65 +371,6 @@
               <folding>
                 <element signature="e#884#885#0" expanded="true" />
                 <element signature="e#920#921#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MysqlIO.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.38/b83cac8c938dfb9b7a8e191e2d482be88eb8280c/mysql-connector-java-5.1.38-sources.jar!/com/mysql/jdbc/MysqlIO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3877" column="0" selection-start-line="3877" selection-start-column="0" selection-end-line="3877" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#200634#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#14950#14951#0" expanded="false" />
-                <element signature="e#14995#14996#0" expanded="false" />
-                <element signature="e#15476#15477#0" expanded="false" />
-                <element signature="e#15524#15525#0" expanded="false" />
-                <element signature="e#15576#15577#0" expanded="false" />
-                <element signature="e#15628#15629#0" expanded="false" />
-                <element signature="e#31794#31795#0" expanded="false" />
-                <element signature="e#31866#31867#0" expanded="false" />
-                <element signature="e#36097#36098#0" expanded="false" />
-                <element signature="e#36140#36141#0" expanded="false" />
-                <element signature="e#38286#38287#0" expanded="false" />
-                <element signature="e#38322#38323#0" expanded="false" />
-                <element signature="e#38447#38448#0" expanded="false" />
-                <element signature="e#38493#38494#0" expanded="false" />
-                <element signature="e#38618#38619#0" expanded="false" />
-                <element signature="e#38664#38665#0" expanded="false" />
-                <element signature="e#38796#38797#0" expanded="false" />
-                <element signature="e#38845#38846#0" expanded="false" />
-                <element signature="e#38956#38957#0" expanded="false" />
-                <element signature="e#38997#38998#0" expanded="false" />
-                <element signature="e#98066#98067#0" expanded="false" />
-                <element signature="e#98143#98144#0" expanded="false" />
-                <element signature="e#104533#104534#0" expanded="false" />
-                <element signature="e#104590#104591#0" expanded="false" />
-                <element signature="e#121270#121271#0" expanded="false" />
-                <element signature="e#121302#121303#0" expanded="false" />
-                <element signature="e#127346#127347#0" expanded="false" />
-                <element signature="e#127401#127402#0" expanded="false" />
-                <element signature="e#168809#168810#0" expanded="false" />
-                <element signature="e#168848#168849#0" expanded="false" />
-                <element signature="e#196066#196067#0" expanded="false" />
-                <element signature="e#196158#196159#0" expanded="false" />
-                <element signature="e#196197#196198#0" expanded="false" />
-                <element signature="e#196237#196238#0" expanded="false" />
-                <element signature="e#197206#197207#0" expanded="false" />
-                <element signature="e#197242#197243#0" expanded="false" />
-                <element signature="e#197292#197293#0" expanded="false" />
-                <element signature="e#197342#197343#0" expanded="false" />
-                <element signature="e#197388#197389#0" expanded="false" />
-                <element signature="e#197434#197435#0" expanded="false" />
-                <element signature="e#197480#197481#0" expanded="false" />
-                <element signature="e#197524#197525#0" expanded="false" />
-                <element signature="e#197563#197564#0" expanded="false" />
-                <element signature="e#197603#197604#0" expanded="false" />
-                <element signature="e#198351#198352#0" expanded="false" />
-                <element signature="e#198399#198400#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1656,7 +1608,7 @@
       <workItem from="1467062376536" duration="10464000" />
       <workItem from="1467286978638" duration="2897000" />
       <workItem from="1467460221117" duration="1745000" />
-      <workItem from="1467466565643" duration="4263000" />
+      <workItem from="1467466565643" duration="4530000" />
     </task>
     <task id="LOCAL-00001" summary="Betting app 06.2016">
       <created>1465904680429</created>
@@ -1736,11 +1688,17 @@
       <option name="project" value="LOCAL" />
       <updated>1467470779887</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Deploy">
+      <created>1467470868870</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1467470868870</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44408000" />
+    <option name="totallyTimeSpent" value="44675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1753,7 +1711,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="245" y="-776" width="1376" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1761,7 +1719,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4785276" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
@@ -1845,13 +1803,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ai/config/UserDet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ai/services/WalletService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2287,15 +2238,23 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37696335">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.1361257">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
           <folding />
         </state>
       </provider>
