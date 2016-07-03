@@ -30,10 +30,10 @@ public class UserService {
 //            user.getCart().setProducts(L);}
 
     }
-
-    public List<User> getUsers(){
-        return userRepository.findByRoleIdNotLike(1);
-    }
+//
+//    public List<User> getUsers(){
+//        return userRepository.findByRoleIdNotLike(1);
+//    }
     public List<User> getUsers2(){
         return userRepository.findByRoleId(1);
     }
@@ -43,7 +43,7 @@ public class UserService {
         user1.setName(user.getName());
         user1.setSurname(user.getSurname());
         user1.setLogin(user.getLogin());
-        user1.setRole(roleRepository.getOne(2));
+        user1.setRole(roleRepository.findByType("User"));
         user1.setCredits(100.0);
         user1.setPassword(user.getPassword());
         user1.setMail(user.getMail());

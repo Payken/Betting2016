@@ -40,10 +40,10 @@ public class AdminController {
     }
 
 
-    @ModelAttribute("users")
-    private List<User> userList(){
-        return userService.getUsers();
-    }
+//    @ModelAttribute("users")
+//    private List<User> userList(){
+//        return userService.getUsers();
+//    }
 
     @RequestMapping //  rozszerzenie urla z klasy, brak oznacza ze to ten sam url
     public String getView() {

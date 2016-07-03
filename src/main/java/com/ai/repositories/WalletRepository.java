@@ -13,7 +13,7 @@ public interface WalletRepository extends JpaRepository<Wallet, Integer> {
 
 
    List<Wallet> findAll();
-
+   Wallet findByName(String name);
 
 
 }
